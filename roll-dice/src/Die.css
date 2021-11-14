@@ -1,0 +1,23 @@
+.die {
+  font-size: 10rem;
+  margin: 100px 20px;
+  color: mediumslateblue;
+}
+.rolling {
+  animation-name: jiggle;
+  animation-duration: 1s;
+}
+@keyframes jiggle {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  30% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+  60% {
+    transform: translate3d(25%, 0, 0) rotate3d(0, 0, 1, 5deg);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
